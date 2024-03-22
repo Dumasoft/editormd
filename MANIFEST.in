@@ -1,0 +1,7 @@
+include README.md
+
+global-exclude __pycache__
+global-exclude *.pyc
+global-exclude *.pyo
+
+recursive-include editormd/templates *
