@@ -1,0 +1,36 @@
+<div class="panel">
+	<ul class="nav-tabs">
+		<li class="active" data-id="editor">Editor</li>
+		<li data-id="preview-editor" data-url="{{ url }}">Previsualización</li>
+	</ul>
+
+	<div class="panel--body">
+		<div class="tab-pane active" id="editor">
+			<div class="editormd">
+				<div class="editormd--header">
+					<ul>
+						<li><a href="#" id="md-h"><i class="fa-solid fa-h"></i></a></li>
+						<li><a href="#" id="md-bold"><i class="fa-solid fa-bold"></i></a></li>
+						<li><a href="#" id="md-italic"><i class="fa-solid fa-italic"></i></a></li>
+						<li><a href="#" id="md-quote"><i class="fa-solid fa-block-quote"></i></a></li>
+						<li><a href="#" id="md-code"><i class="fa-solid fa-code"></i></a></li>
+						<li><a href="#" id="md-li"><i class="fa-solid fa-list"></i></a></li>
+						<li><a href="#" id="md-ol"><i class="fa-sharp fa-solid fa-list-ol"></i></a></li>
+						<li><a href="#" id="md-list-check"><i class="fa-sharp fa-solid fa-list-check"></i></a></li>
+						<li><a href="#" id="md-resalt-author"><i class="fa-solid fa-at"></i></a></li>
+						<li><a href="#" id="md-resalt-quote"><i class="fa-duotone fa-quote-left"></i></a></li>
+					</ul>
+				</div>
+				<div class="editormd--content">
+					<label for="md-editor"></label>
+					<textarea name="{{ widget.name }}" id="md-editor">{% if widget.value != None %}{{ widget.value }}{% endif %}</textarea>
+				</div>
+				<div class="editormd--footer"></div>
+			</div>
+		</div>
+		<div class="tab-pane" id="preview-editor">
+			<div class="editormd--preview text-justify" id="md-preview"></div>
+		</div>
+	</div>
+</div>
+
