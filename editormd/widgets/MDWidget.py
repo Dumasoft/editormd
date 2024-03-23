@@ -1,6 +1,6 @@
 from django.forms import Textarea
 
-from bookriders.settings import settings
+from editormd.settings import MD_URL_API
 
 
 class MDWidget(Textarea):
@@ -11,7 +11,7 @@ class MDWidget(Textarea):
 
     def get_context(self, name, value, attrs):
         context = super(MDWidget, self).get_context(name, value, attrs)
-        context['url'] = f'{settings.BASE_URL}editor/api/v1/md_to_html'
+        context['url'] = f'{MD_URL_API}editor/api/v1/md_to_html'
         return context
 
     class Media:
