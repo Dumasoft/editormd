@@ -1,7 +1,7 @@
 from django import forms
 from django.db import models
 
-from ..editormd.widgets import MDWidget
+from editormd.widgets import MDWidget
 
 
 class MDFormField(forms.fields.CharField):
