@@ -2,7 +2,7 @@ from django.forms import Textarea
 
 from django.conf import settings
 
-from editormd.configs import MD_URL_API
+from editormd.settings import get_md_url_api
 
 
 class MDWidget(Textarea):
@@ -14,7 +14,7 @@ class MDWidget(Textarea):
 
     def get_context(self, name, value, attrs):
         context = super(MDWidget, self).get_context(name, value, attrs)
-        context['url'] = f'{MD_URL_API}editor/api/v1/md_to_html'
+        context['url'] = f'{get_md_url_api()}editor/api/v1/md_to_html'
         return context
 
     class Media:
