@@ -20,6 +20,9 @@ class MDWidget(Textarea):
     class Media:
         css = {
             'all': [
-                # 'css/editormd.min.css',
+                'editormd/css/editormd.css',
             ]
         }
+        js = [
+            'editormd/js/editormd.js',
+        ]
