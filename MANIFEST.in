@@ -5,3 +5,4 @@ global-exclude *.pyc
 global-exclude *.pyo
 
 recursive-include editormd/templates *
+recursive-include editormd/static *
