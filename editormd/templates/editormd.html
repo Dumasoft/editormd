@@ -23,7 +23,10 @@
 				</div>
 				<div class="editormd--content">
 					<label for="md-editor"></label>
-					<textarea name="{{ widget.name }}" id="md-editor">{% if widget.value != None %}{{ widget.value }}{% endif %}</textarea>
+					<div class="md-editor-wrap">
+						<div class="md-backdrop" id="md-backdrop" aria-hidden="true"></div>
+						<textarea name="{{ widget.name }}" id="md-editor">{% if widget.value != None %}{{ widget.value }}{% endif %}</textarea>
+					</div>
 				</div>
 				<div class="editormd--footer"></div>
 			</div>
