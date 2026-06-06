@@ -38,13 +38,12 @@ html:root {
     gap: 4px;
     list-style: none;
 }
-
-.editormd--header ul li {
+.editormd--header li {
     display: inline-block;
     margin-right: 10px;
 }
 
-.editormd--header ul li a {
+.editormd--header li a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -61,30 +60,30 @@ html:root {
     box-sizing: border-box;
 }
 
-.editormd--header ul li a:hover {
+.editormd--header li a:hover {
     background: rgba(0, 0, 0, .06);
     border-color: var(--border);
 }
 
-.editormd--header ul li.sep {
+.editormd--header li.sep {
     width: 1px;
     height: 22px;
     margin: 0 4px;
     background: var(--border);
 }
 
-.editormd--header ul li.hl-author a {
+.editormd--header li.hl-author a {
     position: relative;
     color: #72243E;
     padding: 0 10px;
 }
 
-.editormd--header ul li.hl-author a:hover {
+.editormd--header li.hl-author a:hover {
     background: #FBEAF0;
     border-color: #ED93B1;
 }
 
-.editormd--header ul li.hl-author .color-bar {
+.editormd--header li.hl-author .color-bar {
     position: absolute;
     bottom: 2px;
     left: 6px;
@@ -94,18 +93,18 @@ html:root {
     background: #D4537E;
 }
 
-.editormd--header ul li.hl-quote a {
+.editormd--header li.hl-quote a {
     position: relative;
     color: #085041;
     padding: 0 10px;
 }
 
-.editormd--header ul li.hl-quote a:hover {
+.editormd--header li.hl-quote a:hover {
     background: #E1F5EE;
     border-color: #5DCAA5;
 }
 
-.editormd--header ul li.hl-quote .color-bar {
+.editormd--header li.hl-quote .color-bar {
     position: absolute;
     bottom: 2px;
     left: 6px;
