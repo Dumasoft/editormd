@@ -327,5 +327,3 @@ class MDEditor {
 }
 
 new MDEditor();
-
-console.log('cargando editor desde la librería')
