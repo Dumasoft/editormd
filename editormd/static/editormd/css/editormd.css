@@ -38,6 +38,7 @@ html:root {
     gap: 4px;
     list-style: none;
 }
+
 .editormd--header li {
     display: inline-block;
     margin-right: 10px;
@@ -56,12 +57,12 @@ html:root {
     border: 1px solid var(--border);
     border-radius: 6px;
     font-size: 14px;
-    transition: background .12s, border-color .12s;
+    transition: background 0.12s, border-color 0.12s;
     box-sizing: border-box;
 }
 
 .editormd--header li a:hover {
-    background: rgba(0, 0, 0, .06);
+    background: rgba(0, 0, 0, 0.06);
     border-color: var(--border);
 }
 
