@@ -26,18 +26,17 @@ html:root {
     padding: 0 15px;
 }
 
-.editormd--header span {
-    height: 30px;
-    width: 30px;
-}
-
 .editormd--header ul {
     margin: 0;
-    padding: 10px;
+    padding: 8px 10px;
     background-color: var(--background-input);
     border-left: 1px solid var(--border);
     border-right: 1px solid var(--border);
     border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    list-style: none;
 }
 
 .editormd--header ul li {
@@ -46,7 +45,74 @@ html:root {
 }
 
 .editormd--header ul li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 32px;
+    min-width: 32px;
+    padding: 0 8px;
     color: black;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background .12s, border-color .12s;
+    box-sizing: border-box;
+}
+
+.editormd--header ul li a:hover {
+    background: rgba(0, 0, 0, .06);
+    border-color: var(--border);
+}
+
+.editormd--header ul li.sep {
+    width: 1px;
+    height: 22px;
+    margin: 0 4px;
+    background: var(--border);
+}
+
+.editormd--header ul li.hl-author a {
+    position: relative;
+    color: #72243E;
+    padding: 0 10px;
+}
+
+.editormd--header ul li.hl-author a:hover {
+    background: #FBEAF0;
+    border-color: #ED93B1;
+}
+
+.editormd--header ul li.hl-author .color-bar {
+    position: absolute;
+    bottom: 2px;
+    left: 6px;
+    right: 6px;
+    height: 3px;
+    border-radius: 2px;
+    background: #D4537E;
+}
+
+.editormd--header ul li.hl-quote a {
+    position: relative;
+    color: #085041;
+    padding: 0 10px;
+}
+
+.editormd--header ul li.hl-quote a:hover {
+    background: #E1F5EE;
+    border-color: #5DCAA5;
+}
+
+.editormd--header ul li.hl-quote .color-bar {
+    position: absolute;
+    bottom: 2px;
+    left: 6px;
+    right: 6px;
+    height: 3px;
+    border-radius: 2px;
+    background: #1D9E75;
 }
 
 .editormd--content .md-editor-wrap {
